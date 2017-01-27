@@ -12,7 +12,6 @@
     </tr>
   </thead>
 
-  <tbody>
     <% @libraries.each do |library| %>
       <tr>
         <td><%= library.number %></td>
@@ -23,8 +22,7 @@
         <td><%= link_to 'Destroy', library, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
-  </tbody>
+
 </table>
 
 <br>
-
