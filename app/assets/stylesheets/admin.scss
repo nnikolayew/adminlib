@@ -1,0 +1,21 @@
+// Place all the styles related to the admin controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+form{
+  width: 40%;
+  margin: 0 auto;
+
+  h1{
+    text-align: center;
+  }
+  .row{
+    margin: 5% 0;
+
+    .input-group{
+      margin: 3% 0;
+    }
+  }
+}
+.library{
+  font-size: 30px;
+}

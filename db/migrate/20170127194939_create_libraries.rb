@@ -5,7 +5,7 @@ class CreateLibraries < ActiveRecord::Migration
       t.string :name
       t.string :adress
 
-      t.timestamps null: false
+      t.timestamps
     end
   end
 end

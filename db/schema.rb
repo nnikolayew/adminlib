@@ -11,7 +11,37 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170127202225) do
+ActiveRecord::Schema.define(version: 20170129091813) do
+
+  create_table "abonents", force: :cascade do |t|
+    t.integer  "ticket"
+    t.string   "surname"
+    t.string   "name"
+    t.string   "lastname"
+    t.string   "adress"
+    t.integer  "phone"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "books", force: :cascade do |t|
+    t.string   "name"
+    t.string   "autor"
+    t.string   "shifr"
+    t.string   "publishe"
+    t.integer  "year"
+    t.integer  "price"
+    t.date     "date"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "deliveries", force: :cascade do |t|
+    t.date     "dateissue"
+    t.date     "datereturn"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "employees", force: :cascade do |t|
     t.string   "surname"
@@ -20,6 +50,9 @@ ActiveRecord::Schema.define(version: 20170127202225) do
     t.string   "birthday"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.date     "startwork"
+    t.string   "position"
+    t.string   "education"
   end
 
   create_table "libraries", force: :cascade do |t|

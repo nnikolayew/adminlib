@@ -4,9 +4,9 @@ class CreateEmployees < ActiveRecord::Migration
       t.string :surname
       t.string :name
       t.string :lastname
-      t.string :birthday
+      t.date :birthday
 
-      t.timestamps null: false
+      t.timestamps
     end
   end
 end

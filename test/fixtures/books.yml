@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  autor: MyString
+  shifr: MyString
+  publishe: MyString
+  year: 1
+  price: 1
+  date: 2017-01-28
+
+two:
+  name: MyString
+  autor: MyString
+  shifr: MyString
+  publishe: MyString
+  year: 1
+  price: 1
+  date: 2017-01-28

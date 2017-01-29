@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Ticket:</strong>
+  <%= @abonent.ticket %>
+</p>
+
+<p>
+  <strong>Surname:</strong>
+  <%= @abonent.surname %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @abonent.name %>
+</p>
+
+<p>
+  <strong>Lastname:</strong>
+  <%= @abonent.lastname %>
+</p>
+
+<p>
+  <strong>Adress:</strong>
+  <%= @abonent.adress %>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @abonent.phone %>
+</p>
+
+<%= link_to 'Edit', edit_abonent_path(@abonent) %> |
+<%= link_to 'Back', abonents_path %>
