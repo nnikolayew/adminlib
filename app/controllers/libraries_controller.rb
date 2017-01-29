@@ -6,7 +6,7 @@ class LibrariesController < ApplicationController
     end
 
     def show
-    end
+     end
 
     def view
         @libraries = Library.all

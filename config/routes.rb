@@ -1,4 +1,68 @@
 Rails.application.routes.draw do
+  get 'abonents/index'
+
+  get 'abonents/show'
+
+  get 'abonents/view'
+
+  get 'abonents/edit'
+
+  get 'abonents/new'
+
+  get 'abonents/create'
+
+  get 'abonents/update'
+
+  get 'abonents/destroy'
+
+  get 'books/index'
+
+  get 'books/show'
+
+  get 'books/view'
+
+  get 'books/edit'
+
+  get 'books/new'
+
+  get 'books/create'
+
+  get 'books/update'
+
+  get 'books/destroy'
+
+  get 'deliveries/index'
+
+  get 'deliveries/show'
+
+  get 'deliveries/view'
+
+  get 'deliveries/edit'
+
+  get 'deliveries/new'
+
+  get 'deliveries/create'
+
+  get 'deliveries/update'
+
+  get 'deliveries/destroy'
+
+  get 'employees/index'
+
+  get 'employees/show'
+
+  get 'employees/view'
+
+  get 'employees/edit'
+
+  get 'employees/new'
+
+  get 'employees/create'
+
+  get 'employees/update'
+
+  get 'employees/destroy'
+
   get 'libraries/index'
 
   get 'libraries/view'
