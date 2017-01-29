@@ -1,4 +1,20 @@
 Rails.application.routes.draw do
+  get 'libraries/index'
+
+  get 'libraries/view'
+
+  get 'libraries/edit'
+
+  get 'libraries/new'
+
+  get 'libraries/create'
+
+  get 'libraries/update'
+
+  get 'libraries/destroy'
+
+  get 'library/view'
+
   resources :deliveries
   resources :abonents
   resources :books

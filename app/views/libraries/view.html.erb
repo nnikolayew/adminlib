@@ -18,14 +18,9 @@
         <td><%= library.number %></td>
         <td><%= library.name %></td>
         <td><%= library.adress %></td>
-        <td><%= link_to 'Edit', edit_library_path(library) %></td>
-        <td><%= link_to 'Destroy', library, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
 
-<br>
-<div></div>
-<%= link_to 'New Library', new_library_path %>
 <a href="/admin/index">Home</a>

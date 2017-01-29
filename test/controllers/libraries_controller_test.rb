@@ -1,14 +1,19 @@
 require 'test_helper'
 
 class LibrariesControllerTest < ActionController::TestCase
-  setup do
-    @library = libraries(:one)
-  end
-
   test "should get index" do
     get :index
     assert_response :success
-    assert_not_nil assigns(:libraries)
+  end
+
+  test "should get view" do
+    get :view
+    assert_response :success
+  end
+
+  test "should get edit" do
+    get :edit
+    assert_response :success
   end
 
   test "should get new" do
@@ -16,34 +21,19 @@ class LibrariesControllerTest < ActionController::TestCase
     assert_response :success
   end
 
-  test "should create library" do
-    assert_difference('Library.count') do
-      post :create, library: { adress: @library.adress, name: @library.name, number: @library.number }
-    end
-
-    assert_redirected_to library_path(assigns(:library))
-  end
-
-  test "should show library" do
-    get :show, id: @library
+  test "should get create" do
+    get :create
     assert_response :success
   end
 
-  test "should get edit" do
-    get :edit, id: @library
+  test "should get update" do
+    get :update
     assert_response :success
   end
 
-  test "should update library" do
-    patch :update, id: @library, library: { adress: @library.adress, name: @library.name, number: @library.number }
-    assert_redirected_to library_path(assigns(:library))
+  test "should get destroy" do
+    get :destroy
+    assert_response :success
   end
 
-  test "should destroy library" do
-    assert_difference('Library.count', -1) do
-      delete :destroy, id: @library
-    end
-
-    assert_redirected_to libraries_path
-  end
 end
