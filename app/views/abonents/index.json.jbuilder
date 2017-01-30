@@ -1,1 +1,0 @@
-json.array! @abonents, partial: 'abonents/abonent', as: :abonent

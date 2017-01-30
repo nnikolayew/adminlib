@@ -1,28 +1,24 @@
 class AbonentsController < ApplicationController
   before_action :set_abonent, only: [:show, :edit, :update, :destroy]
 
-  # GET /abonents
-  # GET /abonents.json
   def index
     @abonents = Abonent.all
   end
 
-  # GET /abonents/1
-  # GET /abonents/1.json
   def show
   end
 
-  # GET /abonents/new
   def new
     @abonent = Abonent.new
   end
 
-  # GET /abonents/1/edit
+  def view
+    @abonents = Abonent.all
+  end
+
   def edit
   end
 
-  # POST /abonents
-  # POST /abonents.json
   def create
     @abonent = Abonent.new(abonent_params)
 
@@ -37,8 +33,6 @@ class AbonentsController < ApplicationController
     end
   end
 
-  # PATCH/PUT /abonents/1
-  # PATCH/PUT /abonents/1.json
   def update
     respond_to do |format|
       if @abonent.update(abonent_params)
@@ -51,8 +45,6 @@ class AbonentsController < ApplicationController
     end
   end
 
-  # DELETE /abonents/1
-  # DELETE /abonents/1.json
   def destroy
     @abonent.destroy
     respond_to do |format|
@@ -62,12 +54,10 @@ class AbonentsController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
     def set_abonent
       @abonent = Abonent.find(params[:id])
     end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
     def abonent_params
       params.require(:abonent).permit(:ticket, :surname, :name, :lastname, :adress, :phone)
     end

@@ -1,0 +1,32 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Abonents</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Ticket</th>
+      <th>Surname</th>
+      <th>Name</th>
+      <th>Lastname</th>
+      <th>Adress</th>
+      <th>Phone</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @abonents.each do |abonent| %>
+      <tr>
+        <td><%= abonent.ticket %></td>
+        <td><%= abonent.surname %></td>
+        <td><%= abonent.name %></td>
+        <td><%= abonent.lastname %></td>
+        <td><%= abonent.adress %></td>
+        <td><%= abonent.phone %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<a href="/admin/index">Home</a>

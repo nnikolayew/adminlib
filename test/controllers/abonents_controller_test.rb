@@ -1,14 +1,24 @@
 require 'test_helper'
 
 class AbonentsControllerTest < ActionController::TestCase
-  setup do
-    @abonent = abonents(:one)
-  end
-
   test "should get index" do
     get :index
     assert_response :success
-    assert_not_nil assigns(:abonents)
+  end
+
+  test "should get show" do
+    get :show
+    assert_response :success
+  end
+
+  test "should get view" do
+    get :view
+    assert_response :success
+  end
+
+  test "should get edit" do
+    get :edit
+    assert_response :success
   end
 
   test "should get new" do
@@ -16,34 +26,19 @@ class AbonentsControllerTest < ActionController::TestCase
     assert_response :success
   end
 
-  test "should create abonent" do
-    assert_difference('Abonent.count') do
-      post :create, abonent: { adress: @abonent.adress, lastname: @abonent.lastname, name: @abonent.name, phone: @abonent.phone, surname: @abonent.surname, ticket: @abonent.ticket }
-    end
-
-    assert_redirected_to abonent_path(assigns(:abonent))
-  end
-
-  test "should show abonent" do
-    get :show, id: @abonent
+  test "should get create" do
+    get :create
     assert_response :success
   end
 
-  test "should get edit" do
-    get :edit, id: @abonent
+  test "should get update" do
+    get :update
     assert_response :success
   end
 
-  test "should update abonent" do
-    patch :update, id: @abonent, abonent: { adress: @abonent.adress, lastname: @abonent.lastname, name: @abonent.name, phone: @abonent.phone, surname: @abonent.surname, ticket: @abonent.ticket }
-    assert_redirected_to abonent_path(assigns(:abonent))
+  test "should get destroy" do
+    get :destroy
+    assert_response :success
   end
 
-  test "should destroy abonent" do
-    assert_difference('Abonent.count', -1) do
-      delete :destroy, id: @abonent
-    end
-
-    assert_redirected_to abonents_path
-  end
 end

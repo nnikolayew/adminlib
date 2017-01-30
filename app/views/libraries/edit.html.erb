@@ -1,6 +1,9 @@
 <h1>Editing library</h1>
 
 <%= render 'form' %>
-
-<%= link_to 'Show', @library %> |
-<%= link_to 'Back', libraries_path %>
+<nav>
+    <ul class="nav">
+        <li><%= link_to 'Show', @library %></li>
+        <li><%= link_to 'Back', libraries_path %></li>
+    </ul>
+</nav>

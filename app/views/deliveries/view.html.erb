@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Deliveries</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Dateissue</th>
+      <th>Datereturn</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @deliveries.each do |delivery| %>
+      <tr>
+        <td><%= delivery.dateissue %></td>
+        <td><%= delivery.datereturn %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<a href="/admin/index">Home</a>
