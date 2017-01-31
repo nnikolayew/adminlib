@@ -11,11 +11,13 @@
   </thead>
 
   <tbody>
+    <% @libraries.each do |library| %>
       <tr>
         <td><%= library.number %></td>
         <td><%= library.name %></td>
         <td><%= library.adress %></td>
       </tr>
+    <% end %>
   </tbody>
 </table>
 
