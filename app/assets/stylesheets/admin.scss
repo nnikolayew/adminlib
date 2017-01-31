@@ -3,13 +3,15 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 form{
   width: 40%;
-  margin: 0 auto;
+  margin: 0 auto; !important;
 
   header{
+    width: 100%;
     height: 50px;
     text-align: center;
     font-size: 40px;
     border-bottom: 1px solid #dddddd;
+    background-color: #0e90d2;
   }
 
   .row{
